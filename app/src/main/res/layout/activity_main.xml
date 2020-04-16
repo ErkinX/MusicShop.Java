@@ -52,8 +52,10 @@
         android:layout_height="wrap_content"/>
 
     <Spinner
+        android:id="@+id/spinner"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        tools:ignore="InvalidId">
 
     </Spinner>
 
@@ -121,6 +123,7 @@
 
         <Button
             android:id="@+id/minusButton"
+            android:onClick="decreaseQuantity"
             android:layout_toRightOf="@id/currencyTextView"
             android:layout_below="@id/quantityTitleTextView"
             android:textColor="@android:color/white"
