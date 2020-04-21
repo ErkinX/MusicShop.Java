@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class OrderActivity extends AppCompatActivity {
 
-    String[] addresses = {"19atabaev.aziz97@gmail.com"};
+    String[] addresses = {"ax.erkin@gmail.com"};
     String subject = "Order from Music Shop";
     String emailText;
 
@@ -31,15 +31,12 @@ public class OrderActivity extends AppCompatActivity {
                 "Quantity: " + quantity + "\n" +
                 "Price: " + price + "\n" +
                 "Order Price: " + orderPrice;
+
         TextView orderTextView = findViewById(R.id.orderTextView);
         orderTextView.setText(emailText);
     }
 
     public void submitOrder(View view) {
-
-    }
-
-    public void composeEmail(String[] addresses, String subject) {
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this
         intent.putExtra(Intent.EXTRA_EMAIL, addresses);
