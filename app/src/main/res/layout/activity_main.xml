@@ -161,16 +161,16 @@
             android:layout_width="50dp"
             android:layout_height="50dp"/>
 
-
     </RelativeLayout>
-    
+
     <Button
         android:text="Add To Cart"
+        android:onClick="addToCart"
         android:textColor="@android:color/white"
         android:background="@color/colorPrimaryDark"
         android:layout_marginTop="-150dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
 
 </LinearLayout>
